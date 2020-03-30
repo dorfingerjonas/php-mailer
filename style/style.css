@@ -1,0 +1,74 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#email, #subject, #message {
+    width: 35vw;
+    margin: 3vh 0;
+    padding: 1vw;
+    box-shadow: 1px 1px 9px 0px #dbdbdb;
+    background: transparent;
+    font-family: 'Montserrat', sans-serif;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid lightgray;
+    border-radius: 5px;
+    resize: none;
+    transition: border-color 300ms ease-in-out;
+}
+
+#email:focus, #subject:focus, #message:focus {
+    border-color: #03a87c;
+}
+
+#buttonWrapper {
+    width: 37vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+}
+
+p {
+    margin: 0;
+}
+
+#errorField {
+    color: red;
+}
+
+.errorInput {
+    border-color: red !important;
+}
+
+.errorInput:focus {
+    border-color: red !important;
+}
+
+.button {
+    color: #fff;
+    background: #03a87c;
+    border-radius: 7px;
+    padding: .5rem .8rem;
+    -webkit-box-shadow: 1px 1px 9px 0px #dbdbdb;
+            box-shadow: 1px 1px 9px 0px #dbdbdb;
+    cursor: pointer;
+}
+
+form div {
+    width: 37vw;
+    margin: 0 0 1vh 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    user-select: none;
+}
